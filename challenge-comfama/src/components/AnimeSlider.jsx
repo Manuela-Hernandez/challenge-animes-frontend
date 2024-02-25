@@ -12,7 +12,7 @@ export default function AnimeSlider({ animeList }) {
     slidesToShow: 5,
     slidesToScroll: 4,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,

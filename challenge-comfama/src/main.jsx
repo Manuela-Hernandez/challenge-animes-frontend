@@ -5,7 +5,7 @@ import Dashboard from './pages/Dashboard'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Dashboard />
-  </React.StrictMode>,
+  // </React.StrictMode>,
 )

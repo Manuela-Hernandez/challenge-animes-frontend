@@ -1,6 +1,14 @@
 import axios from 'axios';
-const baseUrl = 'https://api.jikan.moe/v4/anime';
+// const baseUrl = 'https://api.jikan.moe/v4/anime';
+const baseUrl = 'http://localhost:3000';
 
-export function getAnimes() {
-    return axios.get(baseUrl)
-  }
+
+export async function getAnimes(page = 1, searchTitle = "") {
+    const response = await axios.get(`${baseUrl}/api/animes?page=${page}&q=${searchTitle}`);
+    return response;
+}
+
+export async function getAnimesTop() {
+    const response = await axios.get(`${baseUrl}/api/animes/top`);
+    return response;
+}
